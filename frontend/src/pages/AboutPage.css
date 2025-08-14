@@ -1,0 +1,55 @@
+#about-page {
+  display: flex;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  overflow-y: auto;
+}
+
+#about-profile {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #2c2c2c;
+}
+
+#profile-picture {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #444;
+}
+
+#about-content {
+  flex: 2;
+  padding: 2rem 3rem;
+  overflow-y: auto;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-heading {
+  font-size: 1.8rem;
+  color: #61dafb;
+  margin-bottom: 1rem;
+}
+
+.about-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+#contact-info {
+  border-top: 1px solid #444;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #aaa;
+}

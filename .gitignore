@@ -1,0 +1,60 @@
+# --- Python / Django ---
+__pycache__/
+*.py[cod]
+*.so
+*.pyo
+*.pyd
+*.pkl
+*.log
+*.pot
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Django stuff
+db.sqlite3
+media/
+staticfiles/
+celerybeat-schedule
+*.mo
+
+# Migrations cache
+**/migrations/**/__pycache__/
+
+# --- Tests / tooling ---
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# --- Node / Frontend ---
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# --- OS / Editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Env & secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.keystore
+
+# --- Docker ---
+**/.dockerignore
+docker-data/
+

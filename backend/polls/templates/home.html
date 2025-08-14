@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Family Sorting Algorithm</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <label for="spInput">Submit your Exported Spreadsheet Here!</label><br>
+    <input type="file" id="spInput" name="spInput" accept=".csv"><br><br>
+    
+    <label for="sorting_instructions">Sorting Instructions (Optional)</label><br>
+    <textarea id="sorting_instructions" name="sorting_instructions" rows="5" cols="60"
+        placeholder="e.g., Try to group based on music taste and personality. Split large friend groups if possible.">
+    </textarea><br><br>
+    
+    <input type="submit" id="subSP" name="subSP" value="Sort Families">
+</form>
+
+{% if result %}
+    <p>File present? {{ result }}</p>
+{% endif %}
+
+{% endblock %}

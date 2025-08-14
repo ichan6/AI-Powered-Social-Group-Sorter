@@ -1,0 +1,165 @@
+/* Base Wrapper */
+.landing-wrapper {
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  box-sizing: border-box;
+}
+
+/* Shared layout for each page */
+.full-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 91vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2b2b;
+  text-align: center;
+}
+
+.hero-banner {
+  width: 120px;
+  height: 120px;
+  background-color: #444;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Hero Text */
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Logo Marquee */
+.logo-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-marquee {
+  display: flex;
+  gap: 3rem;
+  animation: scroll-marquee 25s linear infinite;
+}
+
+.logo-marquee span {
+  font-size: 1.2rem;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Section Content */
+.section {
+  /* height: 100vh; */
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #61dafb;
+}
+
+.section-text {
+  max-width: 700px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.testimonials {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.testimonials p {
+  margin: 0.5rem 0;
+}
+
+/* Terms List */
+.tos-list {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  max-width: 700px;
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tos-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-text,
+  .hero-subtitle,
+  .tos-list {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .logo-marquee span {
+    font-size: 1rem;
+  }
+}
