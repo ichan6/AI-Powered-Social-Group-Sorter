@@ -26,9 +26,3 @@ Built with:
 - ✅ **Dynamic PII detection** to prevent leakage of sensitive information to AI APIs or external parties
 
 ---
-
-## 📸 Screenshots
-> _Add screenshots or GIFs of your app here_
-```markdown
-![Screenshot 1](docs/screenshot1.png)
-![Screenshot 2](docs/screenshot2.png)
